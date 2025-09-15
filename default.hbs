@@ -76,7 +76,11 @@
 				.addSize([0, 0],     [[320, 480]])
 				.build();
 
-			googletag.defineSlot('/16307266/hyperallergic', [[960, 540], [640, 360], [320, 480]], 'div-gpt-ad-1757948558089-0')
+			googletag.defineSlot('/16307266/hyperallergic/hyp-content/hyp-content-1', [[960, 540], [640, 360], [320, 480]], 'div-gpt-ad-1757948558089-0')
+				.defineSizeMapping(mapping)
+				.addService(googletag.pubads());
+
+			googletag.defineSlot('/16307266/hyperallergic/hyp-content/hyp-content-2', [[960, 540], [640, 360], [320, 480]], 'div-gpt-ad-1757948558089-0')
 				.defineSizeMapping(mapping)
 				.addService(googletag.pubads());
 
