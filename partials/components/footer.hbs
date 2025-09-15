@@ -1,6 +1,17 @@
 <footer class="gh-footer{{#match @custom.header_and_footer_color "Accent color"}} has-accent-color{{/match}} gh-outer">
     <div class="gh-footer-inner gh-inner">
 
+       {{^if @member.paid}}
+            <!-- /16307266/hyperallergic -->
+        	<div class="responsive-gpt-ad">
+        		<div id="div-gpt-ad-1757948558089-0">
+        			<script>
+        				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1757948558089-0'); });
+        			</script>
+        		</div>
+        	</div>     
+       {{/if}} 
+        
         <div class="gh-footer-bar">
             <span class="gh-footer-logo is-title">
                 {{#if @site.logo}}
