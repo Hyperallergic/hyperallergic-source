@@ -46,6 +46,45 @@
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
 
+    {{!-- This tag sets up responsive GAM ads --}}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.responsive-gpt-ad {
+			width: 100%;
+			max-width: 960px;
+			margin: 0 auto;
+			min-width: 320px;
+		}
+		#div-gpt-ad-1757948558089-0 {
+			width: 100%;
+			height: auto;
+			min-height: 360px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+	<script>
+		window.googletag = window.googletag || {cmd: []};
+		googletag.cmd.push(function() {
+			var mapping = googletag.sizeMapping()
+				.addSize([960, 0],   [[960, 540], [640, 360], [320, 480]])
+				.addSize([640, 0],   [[640, 360], [320, 480]])
+				.addSize([0, 0],     [[320, 480]])
+				.build();
+
+			googletag.defineSlot('/16307266/hyperallergic', [[960, 540], [640, 360], [320, 480]], 'div-gpt-ad-1757948558089-0')
+				.defineSizeMapping(mapping)
+				.addService(googletag.pubads());
+
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+	</script>
+    
+    
 </head>
 <body class="{{body_class}} has-{{#match @custom.title_font "Elegant serif"}}serif{{else match @custom.title_font "Consistent mono"}}mono{{else}}sans{{/match}}-title has-{{#match @custom.body_font "Elegant serif"}}serif{{else}}sans{{/match}}-body">
 
