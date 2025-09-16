@@ -25,7 +25,7 @@
                             {{#match posts.length ">=" 4}}
                                 {{#get "posts" include="authors" limit="16"}}
                                     {{#foreach posts from="5"}}
-                                        {{> "post-card" lazyLoad=true}}
+                                        {{> "post-card" lazyLoad=true is_home=true}}
                                     {{/foreach}}
                                 {{/get}}
                             {{/match}}
@@ -33,7 +33,7 @@
                             {{#match posts.length ">=" 10}}
                                 {{#get "posts" include="authors" limit="22"}}
                                     {{#foreach posts from="11"}}
-                                        {{> "post-card" lazyLoad=true}}
+                                        {{> "post-card" lazyLoad=true is_home=true}}
                                     {{/foreach}}
                                 {{/get}}
                             {{/match}}
@@ -42,14 +42,14 @@
                         {{#match posts.length ">=" 7}}
                             {{#get "posts" include="authors" limit="19"}}
                                 {{#foreach posts from="8"}}
-                                    {{> "post-card" lazyLoad=true}}
+                                    {{> "post-card" lazyLoad=true is_home=true}}
                                 {{/foreach}}
                             {{/get}}
                         {{/match}}
                     {{else}}
                         {{#get "posts" include="authors" limit="12"}}
                             {{#foreach posts}}
-                                {{> "post-card" lazyLoad=true}}
+                                {{> "post-card" lazyLoad=true is_home=true}}
                             {{/foreach}}
                         {{/get}}
                     {{/match}}
@@ -72,7 +72,7 @@
                 {{!-- Tag and author pages --}}
                 {{#match feed "archive"}}
                     {{#foreach posts}}
-                        {{> "post-card" lazyLoad=true}}
+                        {{> "post-card" lazyLoad=true is_home=true}}
                     {{/foreach}}
                 {{/match}}
 
