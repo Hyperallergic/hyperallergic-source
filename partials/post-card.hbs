@@ -1,5 +1,3 @@
-<div>is_home: {{is_home}}</div>
-
 <article class="gh-card {{post_class}}{{#unless @custom.show_images_in_feed}} no-image{{/unless}}">
     <a class="gh-card-link" href="{{url}}">
         {{#if feature_image}}
@@ -41,8 +39,7 @@
                     <span class="gh-card-author">{{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
                 {{/if}}
                 {{#if @custom.show_publish_date}}
-                <div>Context: {{@context}}</div>
-                    {{#unless @context.home}}
+                    {{#unless is_home}}
                         <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD, YYYY"}}</time>
                     {{/unless}}
                 {{/if}}<!--
