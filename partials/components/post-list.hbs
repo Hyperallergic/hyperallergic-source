@@ -40,16 +40,16 @@
                         {{/if}}
                     {{else match @custom.header_style "Magazine"}}
                         {{#match posts.length ">=" 7}}
-                            {{#get "posts" include="authors" limit="19" is_home=true}}
+                            {{#get "posts" include="authors" limit="19"}}
                                 {{#foreach posts from="8"}}
-                                    {{> "post-card" lazyLoad=true}}
+                                    {{> "post-card" lazyLoad=true is_home=true}}
                                 {{/foreach}}
                             {{/get}}
                         {{/match}}
                     {{else}}
-                        {{#get "posts" include="authors" limit="12" is_home=true}}
+                        {{#get "posts" include="authors" limit="12"}}
                             {{#foreach posts}}
-                                {{> "post-card" lazyLoad=true}}
+                                {{> "post-card" lazyLoad=true is_home=true}}
                             {{/foreach}}
                         {{/get}}
                     {{/match}}
