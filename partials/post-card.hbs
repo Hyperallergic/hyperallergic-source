@@ -38,12 +38,11 @@
              -->{{#if @custom.show_author}}
                     <span class="gh-card-author">{{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
                 {{/if}}
-                {{#unless @context.home}}
-                    {{#if @custom.show_publish_date}}
+                {{#if @custom.show_publish_date}}
+                    {{#unless @context.home}}
                         <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD, YYYY"}}</time>
-                    {{/if}}
-                {{/unless}}
-                <!--
+                    {{/unless}}
+                {{/if}}<!--
          --></footer>
         </div>
     </a>
