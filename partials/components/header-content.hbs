@@ -17,12 +17,12 @@
         {{#match headerStyle "Highlight"}}
             <div class="gh-header-left">
                 {{#foreach posts limit="1"}}
-                    {{> "post-card" imageSizes="(max-width: 767px) calc(100vw - max(8vmin, 40px)), 640px"}}
+                    {{> "post-card" imageSizes="(max-width: 767px) calc(100vw - max(8vmin, 40px)), 640px"  is_home=true}}
                 {{/foreach}}
             </div>
             <div class="gh-header-middle">
                 {{#foreach posts from="2" limit="3"}}
-                    {{> "post-card"}}
+                    {{> "post-card" is_home=true}}
                 {{/foreach}}
             </div>
             <div class="gh-header-right">
@@ -31,7 +31,7 @@
                 {{else}}
                     <div class="gh-featured-feed">
                         {{#foreach posts from="5" limit="6"}}
-                            {{> "post-card" imageSizes="80px"}}
+                            {{> "post-card" imageSizes="80px" is_home=true}}
                         {{/foreach}}
                     </div>
                 {{/if}}
@@ -48,9 +48,9 @@
                     <div class="gh-header-right">
                 {{/match}}
                 {{#if @first}}
-                    {{> "post-card" imageSizes="640px"}}
+                    {{> "post-card" imageSizes="640px"  is_home=true}}
                 {{else}}
-                    {{> "post-card"}}
+                    {{> "post-card"  is_home=true}}
                 {{/if}}
                 {{#match @number 4}}
                     </div>
