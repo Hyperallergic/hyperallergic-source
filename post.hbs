@@ -50,6 +50,16 @@
             {{content}}
         </section>
 
+        {{#if tags}}
+          <ul class="post-tags">
+            {{#foreach tags}}
+              <li>
+                <a href="{{url}}">{{name}}</a>
+              </li>
+            {{/foreach}}
+          </ul>
+        {{/if}}
+
     </article>
 
     {{#if comments}}
