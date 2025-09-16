@@ -2070,6 +2070,23 @@ Search                         LOGO                    Login Subscribe
     width: 100%;
 }
 
+.post-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.post-tags li a {
+  background: #eee;
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95em;
+}
+
+
 /* 14.2. Page template */
 
 .page-template .gh-article-header {
