@@ -48,17 +48,20 @@
 
         <section class="gh-content gh-canvas is-body{{#if @custom.enable_drop_caps_on_posts}} drop-cap{{/if}}">
             {{content}}
+
+              {{#if tags}}
+                  <ul class="post-tags">
+                    {{#foreach tags}}
+                      <li>
+                        <a href="{{url}}">{{name}}</a>
+                      </li>
+                    {{/foreach}}
+                  </ul>
+            {{/if}}
+
         </section>
 
-        {{#if tags}}
-          <ul class="post-tags">
-            {{#foreach tags}}
-              <li>
-                <a href="{{url}}">{{name}}</a>
-              </li>
-            {{/foreach}}
-          </ul>
-        {{/if}}
+      
 
     </article>
 
