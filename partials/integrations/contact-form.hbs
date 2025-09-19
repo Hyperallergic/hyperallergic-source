@@ -1,0 +1,42 @@
+<div class="outpost-contact">
+    <div class="outpost-contact-content-unknown">
+        Please <a href="/#/portal/signin">log in</a> or <a href="/#/portal">create an account</a> to access our contact form.
+    </div>
+    <div class="outpost-contact-inner" style="display: none;">
+        <div class="outpost-contact-content">
+            <form data-outpost-contact-form class="outpost-contact-form">
+                <div class="outpost-message-success" style="display: none;">Thanks. Your request was submitted successfully.</div>
+                <div class="outpost-message-error"></div>
+                <div class="field">
+                    <label>Name:</label>
+                    <input data-contact-name type="text" placeholder="Name">
+                </div>
+                <div class="field">
+                    <label>Email:</label>
+                    <input data-contact-email type="email" placeholder="Email address" required="">
+                </div>
+                <div class="field">
+                    <label>Subject:</label>
+                    <select data-contact-subject>
+                        <option value="other">Select topic</option>
+                        <option value="Subscriptions">Subscriptions</option>
+                        <option value="Store Purchases">Store Purchases</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Advertising">Advertising</option>
+                        <option value="Jobs">Jobs</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Message:</label>
+                    <textarea data-contact-message placeholder="Email your message" required="" rows="4" maxlength="1000"></textarea>
+                    <div class="outpost-progress">
+                        <div class="outpost-progress-bar"></div>
+                        <p class="outpost-remaining-chars"></p>
+                    </div>
+                </div>
+
+                <button class="outpost-contact-submit" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
