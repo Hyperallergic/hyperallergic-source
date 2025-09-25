@@ -17,6 +17,9 @@
     {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}">
 
+	<!-- Dropdown Menu Style -->
+	<link rel="stylesheet" type="text/css" href="{{asset "built/nested-menu-pro.min.css"}}"> 
+
     {{!-- Custom background color --}}
     <style>
         :root {
@@ -120,6 +123,9 @@
 
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
+
+<!-- Dropdown Menu JS -->
+<script src="{{asset "js/lib/nested-menu-pro.min.js"}}"></script>
 
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
