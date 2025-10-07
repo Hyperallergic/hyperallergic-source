@@ -1,0 +1,25 @@
+{{!-- partials/product-card.hbs --}}
+<article class="product-card">
+	<a class="product-card__image-link" href="{{url}}" aria-label="{{title}}">
+		{{#if feature_image}}
+			<img
+				class="product-card__image"
+				src="{{feature_image}}"
+				alt="{{title}}"
+				loading="lazy"
+				width="1200"
+				height="800"
+			/>
+		{{/if}}
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="{{url}}">{{title}}</a>
+		</h3>
+		{{#if excerpt}}
+			<p class="product-card__excerpt">{{excerpt}}</p>
+		{{/if}}
+		{{!-- other meta, price, etc. --}}
+	</div>
+</article>
