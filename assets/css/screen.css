@@ -473,6 +473,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     margin: 0;
     white-space: nowrap;
     list-style: none;
+    position: relative;
 }
 
 .gh-navigation .gh-more-toggle {
@@ -731,6 +732,98 @@ Search                         LOGO                    Login Subscribe
     padding: 8px 0;
 }
 
+/* 6.3.1. Nested dropdown menu (hierarchical navigation) */
+
+/* Hide subitem links before JavaScript processes them - multiple selectors for immediate hiding */
+.gh-navigation-menu .is-subitem,
+.gh-dropdown-nav .is-subitem,
+.nav .is-subitem {
+    display: none !important;
+}
+
+/* Show subitems when they're inside the dropdown menu */
+.gh-submenu .is-subitem {
+    display: block !important;
+}
+
+.gh-navigation-list .is-mainitem {
+    position: relative;
+}
+
+.gh-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gh-dropdown-toggle svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+}
+
+.gh-dropdown-toggle.is-rotated {
+    transform: rotate(180deg);
+}
+
+.gh-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    min-width: 16rem;
+    padding: 12px 0;
+    margin-top: 8px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 0.04), 0 7px 20px -5px rgb(0 0 0 / 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    transform: translateY(-8px);
+}
+
+.gh-submenu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.gh-submenu li {
+    margin: 0 !important;
+}
+
+.gh-submenu li a {
+    display: block;
+    padding: 8px 20px;
+    white-space: nowrap;
+    color: #15171a !important;
+    transition: background-color 0.15s ease;
+}
+
+.gh-submenu li a:hover {
+    background-color: rgb(0 0 0 / 0.03);
+}
+
+.gh-submenu li.nav-current a {
+    color: var(--color-primary, #3eb0ef) !important;
+    font-weight: 600;
+}
+
+/* Hide subitem indicator on nested items */
+.gh-submenu li.nav-current:not(:has(a[href="#"]))::after {
+    display: none;
+}
+
 /* 6.4. Mobile menu */
 
 .gh-burger {
@@ -865,6 +958,38 @@ Search                         LOGO                    Login Subscribe
         opacity: 1;
         transition: transform 0.2s, opacity 0.2s;
         transform: translateY(0);
+    }
+
+    /* Mobile nested dropdown styles */
+    .gh-submenu {
+        position: static;
+        max-height: 0;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 20px;
+        overflow: hidden;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        transform: none;
+    }
+
+    .gh-submenu.is-open {
+        max-height: 500px;
+        padding: 12px 0;
+    }
+
+    .gh-submenu li a {
+        padding: 8px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .gh-dropdown-toggle {
+        margin-left: 8px;
     }
 
     .is-open#gh-navigation .gh-navigation-actions {

@@ -17,7 +17,7 @@
         </div>
 
         <nav class="gh-navigation-menu">
-            {{navigation}}
+            {{> "components/navigation-dropdown"}}
             {{#unless @site.members_enabled}}
                 {{#match navigationLayout "Stacked"}}
                     {{> "search-toggle"}}
@@ -51,3 +51,6 @@
 
     </div>
 </header>
+
+{{!-- Dropdown toggle template for nested navigation --}}
+{{> "components/dropdown-toggle"}}

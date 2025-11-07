@@ -1,0 +1,13 @@
+{{!-- Navigation with dropdown support --}}
+{{> navigation-list ul_class="nav gh-dropdown-nav"}}
+<script>
+// Initialize dropdown functionality - matches Gazet implementation
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('.gh-navigation-menu .gh-dropdown-nav');
+    if (nav && typeof initDropdown === 'function') {
+        nav.setAttribute('data-dropdown-nav', '');
+        // Call initDropdown with dropdown CSS class like Gazet does
+        initDropdown(nav, 'gh-submenu');
+    }
+});
+</script>
