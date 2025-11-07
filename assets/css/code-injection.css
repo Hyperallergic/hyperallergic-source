@@ -1,0 +1,231 @@
+/* Serif Fonts---------------------------------------------------------- */
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) {
+		--factor: 1.15;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) :is(.is-title, .gh-content :is(h2, h3)) {
+		font-weight: 500;
+}
+
+.has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .is-body {
+		font-family: var(--gh-font-body, var(--font-serif));
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-header.is-classic .gh-header-title {
+		font-weight: 500;
+		letter-spacing: -0.015em;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-form {
+		border-radius: 0;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-card-title {
+		line-height: 1.15;
+		letter-spacing: -0.006em;
+		font-size: calc(2.0rem*var(--factor, 1));
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-featured-feed .gh-card-title {
+		font-size: calc(1.6rem*var(--factor, 1));
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-header.is-highlight .gh-featured-feed .gh-card-title {
+		font-size: clamp(1.6rem, 0.23vw + 1.51rem, 1.7rem);
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-about-title {
+		letter-spacing: -0.009em;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-footer-signup-header {
+		letter-spacing: -0.019em;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-article-title {
+		letter-spacing: -0.019em;
+}
+
+.has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) {
+		--content-font-size: 1.9rem;
+}
+
+.has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-excerpt {
+		font-size: 1.65rem;
+		line-height: 1.4;
+		letter-spacing: 0.0005em;
+}
+
+.has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-header.is-magazine .gh-header-inner > .gh-card .gh-card-excerpt,
+.has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-header.is-highlight .gh-card:first-child .gh-card-excerpt {
+		font-size: 1.8rem;
+		letter-spacing: -0.001em;
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-header.is-magazine .gh-header-inner>.gh-card .gh-card-title,
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-header.is-highlight .gh-header-left .gh-card-title {
+		font-weight: 500;
+		font-size: clamp(3.2rem,1.82vw + 2.47rem,4.4rem)
+}
+
+.has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-cta-title {
+		font-size: 4.8rem;
+}
+
+
+/* Set font for Gallery Caption */
+
+figure.kg-gallery-card figcaption {
+  font-family: Inter, sans-serif;
+}  
+
+
+/* Set font size of content, mobile & desktop */
+@media (max-width: 600px) {
+  .gh-content {
+    font-size: var(--content-font-size, 1.8rem);
+    letter-spacing: 0em;
+ }
+}
+  .gh-content {
+    font-size: var(--content-font-size, 2.0rem);
+    letter-spacing: 0em;
+}
+
+
+/* Navigation & footer Menus */
+.gh-navigation-menu, .gh-footer-menu, .gh-footer-copyright {
+  font-family: inter, sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  }
+
+/* Round Subscribe Button in header */
+:is(.has-serif-title,.has-mono-title):not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) :is(.gh-button, .gh-form, .gh-form-input),
+body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-heading-inter):not(.gh-font-heading-manrope):not(.gh-font-heading-noto-sans):not(.gh-font-heading-nunito):not(.gh-font-heading-poppins):not(.gh-font-heading-roboto):not(.gh-font-heading-space-grotesk) :is(.gh-button, .gh-form, .gh-form-input) {
+    border-radius: 8px;
+}  
+  
+  
+/* Post Layout with small featured image */
+.small-feature-image {
+  max-width: 720px;
+  margin: 0 auto;
+}  
+
+/* Article Featured Tag above title */
+ .gh-article-tag, .gh-container-title {
+  font-family: inter, sans-serif;
+   font-weight: 600;
+}
+ 
+/*  Article Featured Tag above title on Card */
+.gh-header.is-highlight .gh-header-left .gh-card .gh-card-tag {
+  font-family: inter, sans-serif;
+  font-weight: 600;
+}
+
+/* Article Meta */
+.gh-card-meta, .gh-article-author-name, .gh-article-meta-content, .gh-navigation-members, .gh-more.is-title a, .gh-form, .gh-announcement-bar  {
+  font-family: inter, sans-serif;
+}
+
+/* Links */
+.gh-content a {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #00aeef;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.gh-content a:hover {
+  text-decoration-color: #000000;
+}
+  
+/* Post Tags */
+ .post-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+  
+.post-tags li a {
+  background: #eee;
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: inter;
+}
+
+ul.post-tags li {
+    margin-top: 0px;
+}
+
+ul.post-tags {
+  padding-left: 0;
+  padding-bottom: 28px;
+}
+
+/* Ghost & WP Image Captions */
+.gh-article-image figcaption, figure.kg-card.kg-image-card.kg-card-hascaption figcaption {
+  font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Outpost CTA */
+.outpost-cta-form input[type="email"],
+.outpost-slot-1 input[data-members-email], .outpost-slot-1 input[data-members-email]:focus,
+.outpost-slot-2 input[data-members-email], .outpost-slot-2 input[data-members-email]:focus,
+.outpost-slot-3 input[data-members-email], .outpost-slot-3 input[data-members-email]:focus {
+  font-family: Inter, sans-serif;
+}
+  
+  
+/* Contextly Container */
+.ctx-module-container { 
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.ctx-module-container .ctx-content-float .ctx-links-header p {
+  font-family: Inter, sans-serif;
+}
+  
+.ctx-module-container .ctx-link-title, .ctx-link-title p  {
+  font-family: "Martina Plantijn", Serif;
+  font-weight: 500;
+}
+
+.ctx-content-float.ctx-module-medium .ctx-link-title{
+  font-size: 1.5rem;
+} 
+
+/* Scroll Progress */
+  [data-progress-bar] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:5px;
+    background-color:transparent;
+    z-index:1100;
+  }
+  [data-progress-bar]::-webkit-progress-bar { background: transparent; }
+  [data-progress-bar]::-moz-progress-bar { background: var(--ghost-accent-color); }
+  [data-progress-bar]::-webkit-progress-value { background: var(--ghost-accent-color); }
+
+

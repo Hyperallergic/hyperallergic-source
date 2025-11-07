@@ -64,7 +64,7 @@ production stylesheet in assets/built/screen.css
     --color-dark-border: rgb(0 0 0 / 0.55);
     --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: "Martina Plantijn", Georgia, Times, serif;
-    --font-serif-alt: Georgia, Times, serif;
+    --font-serif-alt: "Martina Plantijn", Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
     --container-width: 1320px;
     --container-gap: clamp(24px, 1.7032rem + 1.9355vw, 48px);
@@ -2308,7 +2308,7 @@ unless a heading is the very first element in the post content */
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-content .kg-toggle-content > ol,
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-content .kg-toggle-content > ul,
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-content .kg-toggle-content > p {
-    font-family: var(--font-serif-alt);
+    font-family: var(--font-serif);
 }
 
 .gh-content :is(ul, ol) {
