@@ -732,6 +732,11 @@ Search                         LOGO                    Login Subscribe
     padding: 8px 0;
 }
 
+.gh-navigation-menu .nav .nav-toggle {
+    position: relative;
+    padding-right: 17px;
+}
+
 /* 6.3.1. Nested dropdown menu (hierarchical navigation) */
 
 /* Hide subitem links before JavaScript processes them - multiple selectors for immediate hiding */
@@ -754,14 +759,17 @@ Search                         LOGO                    Login Subscribe
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    margin-left: 4px;
+    width: 16px;
+    height: 10px;
+    margin-left: 1px;
     padding: 0;
     background: transparent;
     border: 0;
     cursor: pointer;
     transition: transform 0.2s ease;
+    position:absolute;
+    bottom:6px;
+    right:0;
 }
 
 .gh-dropdown-toggle svg {
