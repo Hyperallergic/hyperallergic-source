@@ -69,9 +69,9 @@
     text-decoration: none !important
 }
 
-.ctx-content-float .ctx-link,
-.ctx-content-float .ctx-link-title p {
-    font-family: "Martina Plantjin", serif;
+.ctx-module .ctx-link-title p {
+    font-family: "Martina Plantjin", 'Times New Roman', Times, serif !important;
+    font-size: 1.5rem;
 }
 
 .ctx-content-float .ctx-link-title {
