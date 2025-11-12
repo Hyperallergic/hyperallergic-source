@@ -3468,3 +3468,39 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
 }
+
+.responsive-gpt-ad {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+#div-gpt-ad-1757948558089-1, 
+#div-gpt-ad-1757948558089-2, 
+#div-gpt-ad-1757948558089-3, 
+#div-gpt-ad-1757948558089-9 {
+    width: auto;
+height: auto;
+min-height: 360px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f9f9f9;
+margin: 48px auto;
+padding: 2rem 3rem;
+flex-direction: column;
+}
+
+#div-gpt-ad-1757948558089-1::before, 
+#div-gpt-ad-1757948558089-2::before, 
+#div-gpt-ad-1757948558089-3::before, 
+#div-gpt-ad-1757948558089-9::before {
+content: "Advertisement ";
+display: flex;
+color: gray;
+margin-right: 0;
+font-family: inter, sans-serif;
+font-size: 1rem;
+font-weight: 300;
+padding-bottom: 1rem;
+text-transform: uppercase;
+}
