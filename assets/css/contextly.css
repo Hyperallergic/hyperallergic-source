@@ -69,9 +69,18 @@
     text-decoration: none !important
 }
 
-.ctx-module .ctx-link-title p {
-    font-family: "Martina Plantjin", 'Times New Roman', Times, serif !important;
-    font-size: 1.5rem;
+.ctx-module-container .ctx-module .ctx-link-title p {
+    font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
+    font-size: 1.5rem !important;
+}
+
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta {
+    font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
+}
+
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta .category,
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta .ctx-meta-separator {
+    display: none;
 }
 
 .ctx-content-float .ctx-link-title {
