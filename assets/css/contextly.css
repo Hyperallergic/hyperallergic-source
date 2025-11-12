@@ -69,16 +69,25 @@
     text-decoration: none !important
 }
 
+.ctx-module-container .ctx-module .ctx-links-header {
+    font-family: inter, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+}
+
+
+
 .ctx-module-container .ctx-module .ctx-link-title p {
     font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
     font-size: 1.5rem !important;
 }
 
 .ctx-module-container .ctx-module .ctx-link-title .ctx-meta {
-    font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
+    font-family: inter, sans-serif !important;
 }
 
 .ctx-module-container .ctx-module .ctx-link-title .ctx-meta .category,
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta .date, 
 .ctx-module-container .ctx-module .ctx-link-title .ctx-meta .ctx-meta-separator {
     display: none;
 }
