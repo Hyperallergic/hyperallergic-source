@@ -78,7 +78,9 @@
 
 
 
-.ctx-module-container .ctx-module .ctx-link-title p.title a {
+.ctx-module-container .ctx-module .ctx-link-title p.title a,
+.ctx-module-container .ctx-content-mobile-float .ctx-link-title p,
+.ctx-module-container .ctx-content-mobile-float .ctx-link {
     font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
     font-weight: 500 !important;
     line-height: 1.15!important;
@@ -102,6 +104,9 @@ line-height: 1.4 !important;
 .ctx-module-container .ctx-module .ctx-link-title .ctx-meta .ctx-meta-separator {
     display: none;
 }
+
+
+
 
 .ctx-content-float .ctx-link-title {
     padding: .5em 0 0 0 !important
