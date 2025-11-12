@@ -78,7 +78,7 @@
 
 
 
-.ctx-module-container .ctx-module .ctx-link-title p {
+.ctx-module-container .ctx-module .ctx-link-title p.title a {
     font-family: "Martina Plantijn", 'Times New Roman', Times, serif !important;
     font-weight: 500 !important;
     line-height: 1.15!important;
@@ -86,7 +86,8 @@ letter-spacing: -0.006em!important;
 font-size: calc(2.0rem*var(--factor, 1))!important;
 }
 
-.ctx-module-container .ctx-module .ctx-link-title .ctx-meta {
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta,
+.ctx-module-container .ctx-module .ctx-link-title .ctx-meta .author {
     font-family: inter, sans-serif !important;
 
     color: var(--color-secondary-text) !important;
