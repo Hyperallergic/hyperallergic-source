@@ -3518,9 +3518,9 @@ text-transform: uppercase;
 }
   
 .post-tags li a {
-  background: #eee;
+  /* background: #eee;
   border-radius: 4px;
-  padding: 4px 12px;
+  padding: 4px 12px; */
   text-decoration: none;
   color: #000;
   font-size: 0.75em;
@@ -3530,7 +3530,7 @@ text-transform: uppercase;
 
 .post-tags li a::before {
    content: '# ';
-   color: var(--color-primary); 
+   color: #00aeef; 
 }
 
 ul.post-tags li {
