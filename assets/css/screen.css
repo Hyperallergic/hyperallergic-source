@@ -3525,7 +3525,7 @@ text-transform: uppercase;
   color: #000;
   font-size: 0.75em;
   font-weight: 500;
-  font-family: inter;
+  font-family: inter, sans-serif;
 }
 
 .post-tags li a::before {
