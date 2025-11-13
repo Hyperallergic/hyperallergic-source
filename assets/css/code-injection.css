@@ -145,34 +145,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
   text-decoration-color: #000000;
 }
   
-/* Post Tags */
- .post-tags {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-  
-.post-tags li a {
-  background: #eee;
-  border-radius: 4px;
-  padding: 4px 12px;
-  text-decoration: none;
-  color: #000;
-  font-size: 0.75em;
-  font-weight: 500;
-  font-family: inter;
-}
 
-ul.post-tags li {
-    margin-top: 0px;
-}
-
-ul.post-tags {
-  padding-left: 0;
-  padding-bottom: 28px;
-}
 
 /* Ghost & WP Image Captions */
 .gh-article-image figcaption, figure.kg-card.kg-image-card.kg-card-hascaption figcaption {

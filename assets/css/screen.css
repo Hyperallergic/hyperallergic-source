@@ -3469,6 +3469,9 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     background: none;
 }
 
+
+/* Responsive Ad Styling */
+
 .responsive-gpt-ad {
     width: var(--container-width);
     margin: 0 auto;
@@ -3503,4 +3506,38 @@ font-size: 1rem;
 font-weight: 300;
 padding-bottom: 1rem;
 text-transform: uppercase;
+}
+
+/* Post Tags */
+ .post-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+  
+.post-tags li a {
+  background: #eee;
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: inter;
+}
+
+.post-tags li a::before {
+   content: '# ';
+   color: var(--color-primary); 
+}
+
+ul.post-tags li {
+    margin-top: 0px;
+}
+
+ul.post-tags {
+  padding-left: 0;
+  padding-bottom: 28px;
 }
