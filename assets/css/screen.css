@@ -3514,7 +3514,8 @@ text-transform: uppercase;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2rem;
+  line-height: 1.4;
 }
   
 .post-tags li a {
