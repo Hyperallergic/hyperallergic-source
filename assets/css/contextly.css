@@ -110,8 +110,8 @@ line-height: 1.4 !important;
     display: none;
 }
 
-.ctx-content-cinema.ctx-module-medium .ctx-link-image,
-.ctx-content-cinema.ctx-module-medium .ctx-link-title {
+.ctx-module-container .ctx-content-cinema.ctx-module-medium .ctx-link-image,
+.ctx-module-container .ctx-content-cinema.ctx-module-medium .ctx-link-title {
     width: 100% !important;
     float: none !important;
 }
