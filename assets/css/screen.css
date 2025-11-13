@@ -1064,12 +1064,10 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-tag {
-    display: block !important;
+    display: block;
     margin-bottom: 4px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
     font-family: inter, sans-serif;
 }
 
@@ -1081,6 +1079,11 @@ Search                         LOGO                    Login Subscribe
 /* Hide first-priority tag if sponsored tag exists */
 .gh-card-tag[data-priority="sponsored"] {
   color: #f1932d;
+}
+
+.gh-header.is-highlight .gh-header-inner .gh-header-left .gh-card .gh-card-tag,
+.gh-header.is-highlight .gh-header-inner .gh-header-middle .gh-card .gh-card-tag  {
+    display: none;
 }
 
 .gh-card-title {
@@ -1185,6 +1188,7 @@ Search                         LOGO                    Login Subscribe
     display: block;
     margin-bottom: 12px;
 }
+
 
 .gh-header.is-magazine .gh-header-inner > .gh-card .gh-card-title {
     font-size: clamp(2.8rem, 1.36vw + 2.25rem, 4rem);
