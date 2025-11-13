@@ -1064,12 +1064,23 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-tag {
-    display: none;
+    display: block !important;
     margin-bottom: 4px;
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    font-family: inter, sans-serif;
+}
+
+/* Hide first-priority tag if sponsored tag exists */
+.gh-card-tag[data-priority="sponsored"] ~ .gh-card-tag[data-priority="first"] {
+  display: none !important;
+}
+
+/* Hide first-priority tag if sponsored tag exists */
+.gh-card-tag[data-priority="sponsored"] {
+  color: #f1932d;
 }
 
 .gh-card-title {
