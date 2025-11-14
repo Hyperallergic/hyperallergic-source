@@ -3487,6 +3487,17 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 /* Responsive Ad Styling */
 
+.outpost-pub-container {
+margin-bottom: 2rem;
+width: var(--container-width);
+grid-column: wide;
+}
+
+.outpost-pub-container.outpost-modern-upgrade-box {
+    width: 100%;
+    grid-column: main;
+}
+
 .responsive-gpt-ad {
     width: var(--container-width);
     margin: 0 auto;
