@@ -57,7 +57,7 @@
 .ctx-content-float .ctx-link-image img {
     max-width: 100% !important;
     height: 100%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2) !important;
+    box-shadow: none !important;
     display: inline-block !important;
     vertical-align: middle !important
 }
@@ -82,6 +82,13 @@
 
 
 
+.ctx-module-container .ctx-content-cinema {
+    width: var(--container-width) !important;
+    margin: 0 auto !important;
+}
+
+
+
 .ctx-module-container .ctx-module .ctx-link-title p.title a,
 .ctx-module-container .ctx-content-mobile-float .ctx-link-title p,
 .ctx-module-container .ctx-content-mobile-float .ctx-link {
@@ -89,7 +96,7 @@
     font-weight: 500 !important;
     line-height: 1.15!important;
 letter-spacing: -0.006em!important;
-font-size: calc(2.0rem*var(--factor, 1))!important;
+font-size: calc(1.5rem*var(--factor, 1))!important;
 color: var(--color-primary-text);
 }
 
@@ -115,6 +122,7 @@ line-height: 1.4 !important;
     width: 100% !important;
     float: none !important;
 }
+
 
 
 
