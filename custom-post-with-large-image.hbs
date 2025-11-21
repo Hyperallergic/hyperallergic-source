@@ -77,7 +77,7 @@
 
 {{/post}}
 
-{{#if @custom.show_related_articles}}
+{{!-- {{#if @custom.show_related_articles}}
     {{#get "posts" include="authors" filter="id:-{{post.id}}" limit="4" as |next|}}
         {{#if next}}
             <section class="gh-container is-grid gh-outer">
@@ -92,4 +92,22 @@
             </section>
         {{/if}}
     {{/get}}
-{{/if}}
+{{/if}} --}}
+
+{{!-- Sponsored posts section --}}
+{{#post}}
+  {{#get "posts" include="authors" filter="tag:sponsored+id:-{{id}}" limit="4" as |sponsored_posts|}}
+    {{#if sponsored_posts}}
+      <section class="gh-container is-grid gh-outer sponsored">
+        <div class="gh-container-inner gh-inner">
+          <h2 class="gh-container-title">Sponsored</h2>
+          <div class="gh-feed">
+            {{#foreach sponsored_posts}}
+              {{> "post-card" lazyLoad=true}}
+            {{/foreach}}
+          </div>
+        </div>
+      </section>
+    {{/if}}
+  {{/get}}
+{{/post}}

@@ -141,7 +141,7 @@ function closeDropdowns(e) {
  * ----------------------------------------------------------------------------- */
 
 function dropdown() {
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const mediaQuery = window.matchMedia('(max-width: 991px)');
 
     const head = document.querySelector('.gh-navigation');
     const menu = head.querySelector('.gh-navigation-menu');

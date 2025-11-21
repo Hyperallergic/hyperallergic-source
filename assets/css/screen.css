@@ -517,7 +517,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     margin-left: -2px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-navigation-logo {
         white-space: normal;
     }
@@ -533,7 +533,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .gh-navigation-brand .gh-search {
         display: none;
     }
@@ -566,7 +566,7 @@ LOGO   Home About Collection Author Portal             Login Subscribe
     grid-template-columns: auto 1fr auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .gh-navigation.is-left-logo .gh-navigation-logo:not(:has(img)) {
         top: -2px;
     }
@@ -627,7 +627,7 @@ Search                         LOGO                    Login Subscribe
     min-height: 80px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-navigation.is-stacked .gh-navigation-brand {
         min-height: unset;
     }
@@ -861,7 +861,7 @@ Search                         LOGO                    Login Subscribe
     display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-burger {
         display: flex;
     }
@@ -1135,6 +1135,17 @@ Search                         LOGO                    Login Subscribe
     margin-right: 4px;
 }
 
+
+.gh-container.sponsored .gh-container-inner .gh-feed .gh-card .gh-card-excerpt {
+    font-size: 1.5rem;
+    display: block;
+    overflow-y: visible;
+}
+
+.gh-container.sponsored .gh-container-inner .gh-feed .gh-card .gh-card-title {
+    font-size: 2rem;
+}
+
 /* 8. Header
 /* ---------------------------------------------------------- */
 
@@ -1304,7 +1315,7 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-header.is-magazine .gh-header-inner {
         display: flex;
         flex-direction: column;
@@ -1480,7 +1491,7 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-header.is-highlight .gh-header-inner {
         display: flex;
         flex-direction: column;
@@ -1705,7 +1716,7 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-viewport > .gh-featured .gh-featured-feed {
         display: flex;
         flex-direction: column;
@@ -1905,7 +1916,7 @@ Search                         LOGO                    Login Subscribe
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-container.is-list .gh-card-link {
         flex-direction: column;
         align-items: flex-start;
@@ -1945,7 +1956,7 @@ Search                         LOGO                    Login Subscribe
     background-color: var(--color-border);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-container.is-grid .gh-feed {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2741,7 +2752,7 @@ figcaption a {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .gh-archive-inner {
         display: flex;
         flex-direction: column-reverse;
