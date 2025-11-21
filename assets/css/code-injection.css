@@ -1,4 +1,5 @@
 
+/* Copied from Code Injection Settings in Ghost Admin to be incorporated into the theme css */
 /* Serif Fonts---------------------------------------------------------- */
 
 .has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) {
@@ -49,7 +50,7 @@
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) {
-		--content-font-size: 1.9rem;
+		--content-font-size: 2rem;
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-excerpt {
