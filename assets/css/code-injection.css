@@ -1,3 +1,4 @@
+
 /* Serif Fonts---------------------------------------------------------- */
 
 .has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) {
@@ -9,7 +10,7 @@
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .is-body {
-		font-family: var(--gh-font-body, var(--font-serif));
+		font-family: var(--gh-font-body, var(--font-serif-alt));
 }
 
 .has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-header.is-classic .gh-header-title {
@@ -145,7 +146,34 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
   text-decoration-color: #000000;
 }
   
+/* Post Tags */
+ /* .post-tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+  
+.post-tags li a {
+  background: #eee;
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: inter;
+}
 
+ul.post-tags li {
+    margin-top: 0px;
+}
+
+ul.post-tags {
+  padding-left: 0;
+  padding-bottom: 28px;
+} */
 
 /* Ghost & WP Image Captions */
 .gh-article-image figcaption, figure.kg-card.kg-image-card.kg-card-hascaption figcaption {
@@ -167,7 +195,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
   
   
 /* Contextly Container */
-.ctx-module-container { 
+/* .ctx-module-container { 
   max-width: 1320px;
   margin: 0 auto;
 }
@@ -175,11 +203,11 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 .ctx-module-container .ctx-content-float .ctx-links-header p {
   font-family: Inter, sans-serif;
 }
-  
-.ctx-module-container .ctx-link-title, .ctx-link-title p  {
-  font-family: "Martina Plantijn", Serif;
+   */
+/* .ctx-module-container .ctx-link-title, .ctx-link-title p  {
+  font-family: "Martina Plantijn", serif !important;
   font-weight: 500;
-}
+} */
 
 .ctx-content-float.ctx-module-medium .ctx-link-title{
   font-size: 1.5rem;
@@ -192,13 +220,44 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     appearance: none;
     position:fixed;
     top:0;
+    left: 0;
     width:100%;
     height:5px;
     background-color:transparent;
     z-index:1100;
+    
   }
   [data-progress-bar]::-webkit-progress-bar { background: transparent; }
   [data-progress-bar]::-moz-progress-bar { background: var(--ghost-accent-color); }
   [data-progress-bar]::-webkit-progress-value { background: var(--ghost-accent-color); }
 
 
+/* Reduce Vertical Spacing Above Footer */
+  .gh-footer {
+    margin-top: 6vw;
+   }
+  
+  /* Remove Extra Vertical Padding from Ads */
+  #div-gpt-ad-1757948558089-1, #div-gpt-ad-1757948558089-2, #div-gpt-ad-1757948558089-3, #div-gpt-ad-1757948558089-9 {
+    padding: 0;
+  }
+  
+
+/* Printe Styles */
+  @media print {
+    .gh-icon-button, .responsive-gpt-ad, .ctx-module-container, .gh-portal-triggerbtn-iframe, .gh-comments, .post-tags, .gh-navigation-menu, .gh-footer-bar,
+    .gh-footer-signup, .outpost-pub-container, .outpost-cta, .gh-feed, .gh-container-title {
+      display: none !important;
+    } 
+  
+    .kg-image-card {
+      max-width: 6in;
+      margin: 0 auto;
+    }
+    
+    @page {
+      size: 8.5in 11in;
+      margin: 0.40in;
+    }
+    
+}
