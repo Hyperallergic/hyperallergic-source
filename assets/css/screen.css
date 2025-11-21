@@ -517,7 +517,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     margin-left: -2px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-navigation-logo {
         white-space: normal;
     }
@@ -533,14 +533,14 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .gh-navigation-brand .gh-search {
         display: none;
     }
 
-    .gh-navigation:not(.is-dropdown-loaded) .gh-navigation-menu .nav > li {
+    /* .gh-navigation:not(.is-dropdown-loaded) .gh-navigation-menu .nav > li {
         opacity: 0;
-    }
+    } */
 }
 
 /* 6.1. Navigation styles */
@@ -566,13 +566,13 @@ LOGO   Home About Collection Author Portal             Login Subscribe
     grid-template-columns: auto 1fr auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .gh-navigation.is-left-logo .gh-navigation-logo:not(:has(img)) {
         top: -2px;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .gh-navigation.is-left-logo .gh-navigation-menu {
         margin-right: 100px;
         margin-left: 16px;
@@ -597,7 +597,7 @@ Home About Collection            LOGO                  Login Subscribe
     gap: 28px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .gh-navigation.is-middle-logo .gh-navigation-menu {
         margin-right: 64px;
     }
@@ -627,13 +627,13 @@ Search                         LOGO                    Login Subscribe
     min-height: 80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-navigation.is-stacked .gh-navigation-brand {
         min-height: unset;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .gh-navigation.is-stacked .gh-navigation-inner {
         padding: 0;
     }
@@ -861,7 +861,7 @@ Search                         LOGO                    Login Subscribe
     display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-burger {
         display: flex;
     }
@@ -1087,7 +1087,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-title {
-    font-size: calc(1.9rem * var(--factor, 1));
+    font-size: calc(2.0rem * var(--factor, 1));
     font-weight: 725;
     letter-spacing: -0.014em;
     line-height: 1.3;
@@ -1309,13 +1309,13 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-header.is-magazine .gh-header-left .gh-card:nth-child(2) .gh-card-image {
         display: none;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-header.is-magazine .gh-header-inner {
         display: flex;
         flex-direction: column;
@@ -1485,13 +1485,13 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-header.is-highlight .gh-header-middle .gh-card:nth-child(2) .gh-card-image {
         display: none;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-header.is-highlight .gh-header-inner {
         display: flex;
         flex-direction: column;
@@ -1716,7 +1716,7 @@ Search                         LOGO                    Login Subscribe
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-viewport > .gh-featured .gh-featured-feed {
         display: flex;
         flex-direction: column;
@@ -1754,7 +1754,7 @@ Search                         LOGO                    Login Subscribe
     display: none;
     grid-column: 1 / -1;
     margin-top: 48px;
-    font-size: calc(1.9rem * var(--factor, 1));
+    font-size: calc(2.0rem * var(--factor, 1));
     font-weight: 725;
     letter-spacing: -0.014em;
 }
@@ -1916,7 +1916,7 @@ Search                         LOGO                    Login Subscribe
     display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-container.is-list .gh-card-link {
         flex-direction: column;
         align-items: flex-start;
@@ -1956,7 +1956,7 @@ Search                         LOGO                    Login Subscribe
     background-color: var(--color-border);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-container.is-grid .gh-feed {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2151,7 +2151,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-excerpt {
     margin-top: clamp(12px, 0.45vw + 10.18px, 16px);
     max-width: 720px;
-    font-size: clamp(1.7rem, 0.23vw + 1.61rem, 1.9rem);
+    font-size: clamp(1.7rem, 0.23vw + 1.61rem, 2.0rem);
     line-height: 1.45;
     letter-spacing: -0.018em;
 }
@@ -2752,7 +2752,7 @@ figcaption a {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-archive-inner {
         display: flex;
         flex-direction: column-reverse;
@@ -2846,7 +2846,7 @@ figcaption a {
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) {
-    --content-font-size: 1.9rem;
+    --content-font-size: 2.0rem;
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .gh-card-excerpt {
@@ -2991,7 +2991,7 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     margin-top: 40px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .gh-footer-bar {
         display: flex;
         flex-direction: column;

@@ -141,7 +141,7 @@ function closeDropdowns(e) {
  * ----------------------------------------------------------------------------- */
 
 function dropdown() {
-    const mediaQuery = window.matchMedia('(max-width: 991px)');
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
 
     const head = document.querySelector('.gh-navigation');
     const menu = head.querySelector('.gh-navigation-menu');
@@ -229,6 +229,12 @@ function dropdown() {
     window.addEventListener('resize', function () {
         setTimeout(() => {
             nav.innerHTML = navHTML;
+
+            // Reinitialize nested dropdown functionality after HTML reset
+            if (typeof initDropdown === 'function') {
+                initDropdown(nav, 'gh-submenu');
+            }
+
             makeDropdown();
         }, 1);
     });
