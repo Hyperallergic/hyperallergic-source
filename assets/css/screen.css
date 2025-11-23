@@ -1754,7 +1754,8 @@ Search                         LOGO                    Login Subscribe
     display: none;
     grid-column: 1 / -1;
     margin-top: 48px;
-    font-size: calc(2.0rem * var(--factor, 1));
+    /* font-size: calc(2.0rem * var(--factor, 1)); */
+    font-size: 1.5rem;
     font-weight: 725;
     letter-spacing: -0.014em;
 }
@@ -1775,8 +1776,8 @@ Search                         LOGO                    Login Subscribe
 
 .gh-more svg {
     margin-top: -1px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 }
 
 .has-serif-title:not([class*=" gh-font-heading"]):not([class^="gh-font-heading"]) .gh-more svg {
