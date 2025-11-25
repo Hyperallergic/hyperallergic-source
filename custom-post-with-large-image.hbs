@@ -68,9 +68,13 @@
     {{> integrations/contextly-module}}
     
     {{#if comments}}
-        <div class="gh-comments gh-canvas">
-            {{comments}}
-        </div>
+        {{^has tag="sponsored"}}
+            {{^has tag="#no-comments"}}
+                <div class="gh-comments gh-canvas">
+                    {{comments}}
+                </div>
+            {{/has}}
+        {{/has}}
     {{/if}}
 
 </main>
