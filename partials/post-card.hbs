@@ -17,22 +17,6 @@
             </figure>
         {{/if}}
         <div class="gh-card-wrapper">
-            {{!-- Show tag: Sponsored if exists, otherwise first public tag --}}
-            {{#foreach tags}}
-                {{#match slug "sponsored"}}
-                    {{#match visibility "public"}}
-                        <p class="gh-card-tag" data-priority="sponsored">{{name}}</p>
-                    {{/match}}
-                {{/match}}
-            {{/foreach}}
-            {{!-- Only show first public tag if no sponsored tag was shown --}}
-            {{#foreach tags}}
-                {{#if @first}}
-                    {{#match visibility "public"}}
-                        <p class="gh-card-tag" data-priority="first">{{name}}</p>
-                    {{/match}}
-                {{/if}}
-            {{/foreach}}
             <h3 class="gh-card-title is-title">{{title}}</h3>
             {{#if custom_excerpt}}
                 <p class="gh-card-excerpt is-body">{{custom_excerpt}}</p>
