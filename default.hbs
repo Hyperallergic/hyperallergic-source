@@ -125,6 +125,10 @@
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
 
+{{!-- Script to add smartquotes.js.org/ --}}
+<script src="{{asset "js/smartquotes.js"}}"></script>
+<script>smartquotes();</script>
+
 
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
