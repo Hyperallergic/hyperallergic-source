@@ -3527,6 +3527,7 @@ grid-column: wide;
 #div-gpt-ad-1757948558089-1, 
 #div-gpt-ad-1757948558089-2, 
 #div-gpt-ad-1757948558089-3, 
+#div-gpt-ad-1757948558089-4,
 #div-gpt-ad-1757948558089-9 {
     width: auto;
 height: auto;
@@ -3542,7 +3543,8 @@ flex-direction: column;
 
 #div-gpt-ad-1757948558089-1::before, 
 #div-gpt-ad-1757948558089-2::before, 
-#div-gpt-ad-1757948558089-3::before, 
+#div-gpt-ad-1757948558089-3::before,
+#div-gpt-ad-1757948558089-4::before,
 #div-gpt-ad-1757948558089-9::before {
 content: "Advertisement ";
 display: flex;
