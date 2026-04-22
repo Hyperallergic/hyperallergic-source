@@ -23,7 +23,7 @@
                     {{#match @custom.header_style "Highlight"}}
                         {{#if @custom.show_featured_posts}}
                             {{#match posts.length ">=" 4}}
-                                {{#get "posts" include="authors,tags" filter="tag:-newsletter,-sponsored" limit="16"}}
+                                {{#get "posts" include="authors,tags" filter="tag:-newsletter" limit="16"}}
                                     {{#foreach posts from="5"}}
                                         {{> "post-card" lazyLoad=true is_home=true}}
                                     {{/foreach}}
