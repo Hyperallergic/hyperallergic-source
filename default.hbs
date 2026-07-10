@@ -104,7 +104,10 @@
 
 			googletag.pubads().enableSingleRequest();
 			googletag.pubads().collapseEmptyDivs();
-			googletag.pubads().setPrivacySettings({ restrictDataProcessing: true });
+			googletag.pubads().setPrivacySettings({
+				restrictDataProcessing: true,
+				nonPersonalizedAds: true
+			});
 			googletag.enableServices();
 		});
 	</script>
