@@ -76,6 +76,22 @@
 }
 
 
+/* Header Styles */
+.gh-content h1 {
+    font-size: calc(2.2em * var(--factor, 1));
+    letter-spacing: -0.02em;
+}
+
+.gh-content h2 {
+    font-size: calc(1.3913em * var(--factor, 1));
+    letter-spacing: -0.02em;
+}
+
+.gh-content h3 {
+    font-size: calc(1.0696em * var(--factor, 1));
+    letter-spacing: -0.017em;
+}
+
 /* Set font for Gallery Caption */
 
 figure.kg-gallery-card figcaption {
